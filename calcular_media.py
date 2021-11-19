@@ -16,7 +16,7 @@ def calculateGrades():
     anualNeed = 60 - actualCount
         
     os.system('cls')
-    print(f'\n\n---------------------------\nSua soma: {str(actualCount)}\n---------------------------\nNota necessária na anual: {anualNeed}\n---------------------------\n\n')
+    print(f'\n\n---------------------------\nSua soma: {"{0:.3g}".format(actualCount)}\n---------------------------\nNota necessária na anual: {"{0:.3g}".format(anualNeed)}\n---------------------------\n\n')
 
 def calculateExpectedAnual():
     firstTri = float(input('Primeiro trimestre: '))
@@ -39,7 +39,7 @@ def calculateExpectedAnual():
     simulatedCount = firstTriFinal + secondTriFinal + thirdTriFinal + newFirstSem + secondSem
 
     os.system('cls')
-    print(f'\n\n---------------------------\nSoma Atual: {str(actualCount)}\n---------------------------\nSoma Simulada: {str(simulatedCount)}\n---------------------------\n\n')
+    print(f'\n\n---------------------------\nSoma Atual: {"{0:.3g}".format(actualCount)}\n---------------------------\nSoma Simulada: {"{0:.3g}".format(simulatedCount)}\n---------------------------\n\n')
 
 while True:
     print('===============================\nO QUE VOCÊ DESEJA?\n===============================\n\n 1 - Calcular Média         2 - Simular Nota na Anual         3 - Sair')
